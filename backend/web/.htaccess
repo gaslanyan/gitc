@@ -1,0 +1,14 @@
+# use mode rewrite for pretty URL support
+RewriteEngine on
+# if a directory or a file exists, use the request directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# otherwise forward the request to index.php
+RewriteRule . index.php
+<LIMIT GET>
+order deny,allow
+deny from all
+allow from  5.63.162.38
+allow from  95.47.185.147
+allow from  46.19.100.138
+</LIMIT>

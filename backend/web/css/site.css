@@ -1,0 +1,226 @@
+html {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+.img-profile {
+    width: 50px;
+}
+
+.alumni-form .form-group {
+    width: 40%;
+    float: left;
+    margin-right: 10%;
+}
+.alumni-form .form-group button {
+    float: none !important;
+}
+
+.alumni-form form ,
+.pages-form form
+{
+    overflow: hidden;
+}
+
+.alumni-form fieldset .form-group,
+.pages-form fieldset .form-group
+{
+    width: 100% !important;
+}
+
+.alumni-form .field-alumni-skills {
+    width: 90% !important;
+}
+
+.alumni-form fieldset,
+.pages-form fieldset
+{
+    float: left;
+    padding: .35em .625em .75em;
+    margin: 2px;
+    border: 1px solid #c0c0c0;
+    width: 49%;
+}
+
+.alumni-form fieldset i ,
+.pages-form fieldset i
+{
+    float: right;
+    cursor: pointer;
+}
+
+.alumni-form fieldset legend,
+.pages-form fieldset legend
+
+{
+    font-size: 22px;
+    width: 95%;
+    font-style: italic;
+    border: 0;
+    float: left;
+}
+
+.alumni-form .form_item {
+    float: left;
+    border-bottom: 1px solid #c0c0c0;
+    position: relative;
+    margin-top: 2%;
+}
+
+.alumni-form .form_item:last-of-type
+/*.pages-form .form_item:last-of-type*/
+{
+    border-bottom: none;
+}
+.content-wrapper, .right-side{
+    overflow: hidden!important;
+}
+
+.alumni-form .form_item .remove_fields,
+.pages-form .form_item .remove_fields
+{
+    position: absolute;
+    right: 0;
+    color: red;
+}
+.alumni-form .form_item .remove_fields{
+    display: none;
+}
+.list_img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    border: 1px solid #605ca8;
+    margin: 1%;
+}
+.view{
+    float: left;
+    border: 1px solid #605ca8;
+    margin: 1%;
+    width: 48%;
+    position: relative;
+}
+.view img{
+    width: 100%;
+}
+.file-previews, .file-previews-uploads {
+    border: 1px solid #605ca8;
+    margin: .5%;
+    width: 167px;
+    height: 175px;
+    padding: 5px;
+    float: left;
+    position: relative;
+}
+
+.modal-content {
+    overflow: hidden;
+}
+
+.file-preview-image, .s_img {
+    width: 150px;
+    height: 150px;
+}
+.delete_inserted, .delete_image, .remove_fields{
+    /*position: absolute;*/
+    left: 0;top:0;
+    cursor: pointer;
+    color:red;
+}
+
+.insert {
+    width: 100%;
+    text-align: center;
+    float: left;
+    margin: 2% auto;
+}
+
+.modal-dialog {
+    width: 80%;
+}

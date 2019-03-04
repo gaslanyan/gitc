@@ -1,0 +1,626 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Emoji;
+    src: url(../fonts/seguiemj.eot);
+    src: url(../fonts/seguiemj.otf);
+    src: url(../fonts/seguiemj.svg);
+    src: url(../fonts/seguiemj.ttf);
+    src: url(../fonts/seguiemj.woff);
+
+}
+
+.wrapper {
+    width: 1145px;
+    margin: 0 auto;
+}
+
+/*header-start*/
+header {
+    margin-top: 1%;
+    height: 115px;
+    display: flex;
+
+}
+
+header h2 {
+    width: 80%;
+    font-size: 19.17pt;
+    display: inline-block;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: Emoji, sans-serif;
+}
+
+.logo_block {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    float: left
+}
+
+nav {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    float: right;
+    justify-content: flex-end;
+}
+
+ul {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 16.07pt;
+    text-transform: uppercase;
+    color: #383838;
+    font-family: Emoji, sans-serif;
+    margin-right: 10px;
+    font-weight: 600;
+
+}
+
+ul li a:hover {
+    color: #f3b877
+}
+
+/*header-end*/
+/* Banner */
+
+#banner {
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    padding: 8em 4em 6em 4em;
+    max-height: 150vh;    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 0;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+   ;
+    border-top: 7px solid #f3b877;
+}
+
+#banner .inner-enroll {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.inner-enroll button {
+    height: 120px;
+    width: 455px;
+    background-color: #45566a;
+    border: 1px solid #45566a;
+    border-radius: 60px;
+    opacity: 0.5;
+    font-size: 43pt;
+    font-family: Emoji, sans-serif;
+    color: #c7d7e8;
+}
+
+.inner-enroll button:hover {
+    opacity: 0.7;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+#banner video {
+    -moz-transform: translateX(50%) translateY(50%);
+    -webkit-transform: translateX(50%) translateY(50%);
+    -ms-transform: translateX(50%) translateY(50%);
+    transform: translateX(50%) translateY(50%);
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+#banner:before {
+    -moz-transition: opacity 3s ease;
+    -webkit-transition: opacity 3s ease;
+    -ms-transition: opacity 3s ease;
+    transition: opacity 3s ease;
+    -moz-transition-delay: 1s;
+    -webkit-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    transition-delay: 1s;
+    content: '';
+    background-color: #42424f;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.45;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/*Banner end*/
+
+.info-block {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    text-align: right;
+    width: 50%;
+    border-right: 1px solid #bbb9b9;
+    padding-right: 3%;
+    margin: 2% 0 2% 0;
+}
+
+.info h1 {
+    text-align: right;
+    font-size: 40pt;
+    color: #f3b877;
+    text-transform: uppercase;
+    font-family: Emoji, sans-serif;
+}
+
+.info p {
+    padding: 1% 0 1% 5%;
+    text-align: justify;
+    font-size: 19pt;
+    font-family: Emoji, sans-serif;
+}
+
+.worker {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.svg {
+    width: 100%;
+}
+
+.per {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.per-worker {
+    height: 33px;
+    width: 33px;
+    background-color: #f3b877
+}
+
+.per-unemployed {
+    height: 33px;
+    width: 33px;
+    background-color: #26486b;
+    margin-left: 20px;
+}
+
+.per span {
+    font-size: 18.03px;
+    margin: 5px;
+    font-family: Emoji, sans-serif;
+}
+
+.results {
+    background-image: url("../images/percents.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 465px;
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
+.div-result {
+    height: 35px;
+    width: 190px;
+    background-color: #fff;
+    border-radius: 2px 2px 80px 80px;
+    position: relative;
+    left: 45%;
+    display: inline-block;
+}
+
+.div-result span {
+    text-transform: uppercase;
+    color: #f3b877;
+    font-size: 23.19pt;
+    display: flex;
+    justify-content: center;
+
+}
+
+.circle-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.outer {
+    padding: 0.5%;
+    border: 25px solid #fff;
+    height: 215px;
+    width: 215px;
+    border-radius: 50%;
+}
+
+.outer-margin-left {
+    margin-left: 2%;
+}
+
+.inner {
+    height: 210px;
+    width: 210px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid #f3b877;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner span {
+    color: #fff;
+    font-size: 30pt;
+    font-family: Emoji;
+}
+
+.circle-block p {
+    font-family: Emoji;
+    text-align: center;
+    font-size: 25pt;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+h3 {
+    color: #000;
+    font-size: 30.68pt;
+    font-family: Emoji;
+    text-align: center;
+}
+
+input, select {
+    width: 543px;
+    border: 1px solid #b8b8b8;
+    height: 43px;
+    font-size: 19.68pt;
+    font-family: Emoji;
+    color: #919396;
+}
+
+label {
+    font-size: 26pt;
+    color: #314154;
+    font-family: Emoji;
+    text-transform: capitalize;
+    line-height: 1;
+    margin-bottom: 1%;
+}
+
+.select-date {
+    display: inline-block;
+}
+
+.input-date {
+    position: relative;
+    z-index: 2;
+    float: left;
+    margin-bottom: 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9%;
+}
+
+.inputs-first-block {
+    margin-right: 3%;
+}
+
+.inputs-second-block {
+    margin-left: 1%;
+}
+
+.input-icon {
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.about-gitc-video {
+    border: 5px solid #f3b877
+
+}
+
+input[type="submit"] {
+    background-color: #fd9f2b;
+    margin-top: 2%;
+    color: #000;
+    border: none;
+    height: 55px;
+
+}
+
+.changing {
+    font-size: 20pt;
+    margin: 0 0 1% 0;
+    font-family: Emoji;
+
+}
+
+.state {
+    margin-bottom: 3%;
+    margin-top: 1%;
+}
+
+footer {
+    background-color: #314154;
+    min-height: 150px;
+
+}
+
+.footer_logo_block {
+    width: 35%;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer_logo_block p {
+    font-size: 18.08pt;
+    font-family: Emoji;
+    color: #5e6d80;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-left: 5%;
+}
+
+.footer-info-block {
+    display: flex;
+    justify-content: center;
+}
+
+.phone {
+    width: 20%;
+    min-height: 150px;
+}
+
+.phone p i, span {
+    color: #647485;
+    font-size: 13pt;
+}
+
+.address {
+    width: 30%;
+    min-height: 150px;
+}
+
+.address p i, span {
+    color: #647485;
+    font-size: 13pt;
+}
+
+.soc-icons {
+    width: 15%;
+    min-height: 150px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.fb {
+    background-color: #556477;
+    font-size: 40px;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.tw {
+    background-color: #7b8a9c;
+    font-size: 40px;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin-left: 6%;
+    margin-top: 10%;
+}
+
+.youtube {
+    background-color: #647485;
+    font-size: 36px;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin-left: 6%;
+    margin-top: 10%;
+}
+.footer-end{
+    display: flex;
+    justify-content: center;
+    background-color: #293647;
+    color: #647485;
+}
+
+/*about*/
+.about-us {
+    font-size: 64pt;
+    font-family: Emoji;
+    margin: 0;
+    color: #fff;
+}
+
+.line {
+    border: 3px solid #fd9f2b;
+    width: 370px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+.inner-enroll span {
+    color: #fff;
+    width: 900px;
+    text-align: center;
+    font-family: Emoji;
+    font-size: 19pt;
+}
+.our{
+    color:#405c7d;
+    font-family: Emoji;
+    font-size: 25pt;
+    text-transform: capitalize;
+    border-left:4px solid #ef9d2f;
+
+}
+.staff{
+    background-color: #e9eaec;
+    width:100%;
+    border-top: 2px solid #ef9d2f;
+    height:375px;
+    display: flex;
+    justify-content: center;
+}
+.staff-circle{
+    height:225px;
+    width:225px;
+    border-radius: 50%;
+    border:2px solid #efa138;
+    position: relative;
+    margin:3%;
+}
+.staff-circle figure img{
+    position: absolute;
+    border-radius: 50%;
+    left: 1%;
+    top: 3%;
+    border: 5px solid #253343;
+}
+
+.staff-circle figcaption{
+    font-size: 14pt;
+    font-family: Emoji;
+    position: absolute;
+    bottom: -40px;
+
+}
+.in{
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+}
+.staff-circle span {
+    font-size: 12pt;
+    color: #ef9f34;
+    text-align: center;
+    position: absolute;
+    bottom: -24%;
+    left: 25%;
+}
+.arrow-block{
+    height: 35px;
+    width: 190px;
+    background-color: #e9eaec;
+    border-radius: 2px 2px 80px 80px;
+    position: relative;
+    left: 45%;
+    display: inline-block;
+}
+.arrow-block img{
+    position: absolute;
+    top: 30%;
+    left: 42%;
+}
+.mission-block{
+    display: flex;
+    justify-content: center;
+}
+.mision{
+    width: 50%;
+    color: #797979;
+    font-size: 19pt;
+    font-family: Emoji;
+    text-align: justify;
+    padding: 0 2% 0 0;
+
+}
+.vision{
+    padding: 0 0 0 2%;
+}
+.founders{
+    display: flex;
+    justify-content: center;
+    border-top:2px solid #ef9f34;
+    background-color: #e9eaec;
+}
+.founder-elem{
+    background-color: #fff;
+    padding: 3%;
+    margin-right: 1%;
+    border:3px solid #e9eaec;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    width:20%;
+
+}
+.last{
+    margin-right: 0;
+}
+.history-text{
+    font-size:19pt;
+    font-family: Emoji;
+    text-align: justify;
+    color: #797979;
+    margin-bottom: 5%;
+}
+/*about end*/
+
+/*projects start*/
+.project-banner{
+    background-image: url("../images/projects.jpg");
+    height:485px;
+}
+
+
+/*projects end*/

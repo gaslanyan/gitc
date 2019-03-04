@@ -1,0 +1,1 @@
+[24-Oct-2017 11:30:26 UTC] PHP Fatal error:  Using $this when not in object context in /home/demogitc/public_html/frontend/views/site/index.php on line 6
